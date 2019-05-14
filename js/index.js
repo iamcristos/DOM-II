@@ -11,8 +11,11 @@ heade.forEach(a => {
     a.addEventListener('dblclick', (e)=>{
         e.target.classList.toggle('keydownClass')
     })
-})
+});
 
+heade.forEach(a=> {
+    a.addEventListener('click', (e)=> e.preventDefault())
+});
 
 const bodyElement = document.querySelector('body');
 bodyElement.addEventListener('keydown', ()=>{
