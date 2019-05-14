@@ -9,13 +9,17 @@ logooHeading.addEventListener('mouseover', (e)=>{
 const heade = document.querySelectorAll('a');
 heade.forEach(a => {
     a.addEventListener('dblclick', (e)=>{
-        console.log(e.target)
         e.target.classList.toggle('keydownClass')
     })
 })
 
-const p = document.querySelectorAll('p');
-const bodyElement = document.q
+
+const bodyElement = document.querySelector('body');
+bodyElement.addEventListener('keydown', ()=>{
+    console.log('hi')
+    const h2 = document.querySelectorAll('h2');
+   h2.forEach(h=> h.style.color = 'brown')
+})
 // p.forEach(par => {
 //     console.log(par)
 //     par.addEventListener('select', (e)=>{
