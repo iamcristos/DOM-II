@@ -23,6 +23,5 @@ bodyElement.addEventListener('keydown', ()=>{
 
 window.addEventListener('load', ()=>{
     const photo = document.querySelector('img')
-    console.log('Hiiiiiiii')
     TweenMax.from(photo, 2, {width:"200px", height:"150px"});
 })
