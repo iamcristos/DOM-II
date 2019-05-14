@@ -27,4 +27,21 @@ bodyElement.addEventListener('keydown', ()=>{
 window.addEventListener('load', ()=>{
     const photo = document.querySelector('img')
     TweenMax.from(photo, 2, {width:"200px", height:"150px"});
-})
+});
+
+const contentPick = document.querySelectorAll('.destination')
+console.log(contentPick)
+contentPick.forEach(items=> {
+    items.addEventListener('click', (e)=>{
+        e.target.style.color = 'pink'
+    });
+});
+
+const btn = document.querySelectorAll('.btn');
+btn.forEach(button => {
+    button.addEventListener('click', (e)=>{
+        e.stopPropagation();
+        TweenMax.from(e.target, 2, {x: 30});
+    })
+
+});
