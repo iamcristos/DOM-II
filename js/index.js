@@ -19,7 +19,6 @@ heade.forEach(a=> {
 
 const bodyElement = document.querySelector('body');
 bodyElement.addEventListener('keydown', ()=>{
-    console.log('hi')
     const h2 = document.querySelectorAll('h2');
    h2.forEach(h=> h.style.color = 'brown')
 })
@@ -30,7 +29,6 @@ window.addEventListener('load', ()=>{
 });
 
 const contentPick = document.querySelectorAll('.destination')
-console.log(contentPick)
 contentPick.forEach(items=> {
     items.addEventListener('click', (e)=>{
         e.target.style.color = 'pink'
