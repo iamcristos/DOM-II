@@ -20,11 +20,9 @@ bodyElement.addEventListener('keydown', ()=>{
     const h2 = document.querySelectorAll('h2');
    h2.forEach(h=> h.style.color = 'brown')
 })
-// p.forEach(par => {
-//     console.log(par)
-//     par.addEventListener('select', (e)=>{
-//         prompt()
-//         e.target.style.color = 'red'
-//     })
-// })
-// p
+
+window.addEventListener('load', ()=>{
+    const photo = document.querySelector('img')
+    console.log('Hiiiiiiii')
+    TweenMax.from(photo, 2, {width:"200px", height:"150px"});
+})
