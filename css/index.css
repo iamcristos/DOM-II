@@ -187,6 +187,10 @@ img {
   align-items: center;
   justify-content: space-between;
 }
+.main-navigation .nav-container .focusClass {
+  border: 1px solid #FFEBCD;
+  font-size: 3rem;
+}
 @media (max-width: 500px) {
   .main-navigation .nav-container {
     flex-wrap: wrap;
