@@ -48,4 +48,21 @@ window.addEventListener('scroll', ()=>{
     images.forEach(img=>{
         TweenMax.to(img, 2 ,{ opacity:0.7, rotation:360})
     })
+});
+
+
+btn.forEach(btn=>{btn.addEventListener('dragstart', (e)=>{
+    e.target.style.color = 'white'
+})
+});
+
+btn.forEach(btn =>{
+    btn.addEventListener('dragover',(e)=> e.preventDefault())
+});
+
+btn.forEach(btn=>{
+    btn.addEventListener('drop',(ev)=> {
+        ev.preventDefault();
+        ev.target.style.color = 'gray'
+      })
 })
