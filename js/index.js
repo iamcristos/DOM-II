@@ -1,19 +1,17 @@
 // Your code goes here
-let logooHeading = document.querySelector('.logo-heading');
+const logooHeading = document.querySelector('.logo-heading');
 logooHeading.addEventListener('mouseover', (e)=>{
     e.target.classList.toggle('focusClass')
 });
 
-// keydown event
-
-const heade = document.querySelectorAll('a');
-heade.forEach(a => {
+const anchor = document.querySelectorAll('a');
+anchor.forEach(a => {
     a.addEventListener('dblclick', (e)=>{
         e.target.classList.toggle('keydownClass')
     })
 });
 
-heade.forEach(a=> {
+anchor.forEach(a=> {
     a.addEventListener('click', (e)=> e.preventDefault())
 });
 
@@ -43,3 +41,11 @@ btn.forEach(button => {
     })
 
 });
+
+const body = document.querySelector('body');
+window.addEventListener('scroll', ()=>{
+    const images = document.querySelectorAll('.img-content img');
+    images.forEach(img=>{
+        TweenMax.to(img, 2 ,{ opacity:0.7, rotation:360})
+    })
+})
